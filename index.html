@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Main Stock Market Analysis</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="header"><h1>Stock Market Analysis</h1></div>
+    <div id="container">
+      <div id="stock-info">
+        <div id="stock-chart">
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div id="button">
+            <button id="btn1d" value="1mo" class="timeBtn">1Month</button>
+            <button id="btn1mo" value="3mo" class="timeBtn">3Month</button>
+            <button id="btn1y" value="1y" class="timeBtn">1Year</button>
+            <button id="btn5y" value="5y" class="timeBtn">5Years</button>
+          </div>
+        </div>
+        <div id="summary">
+          <div>
+            <span id="Stockname"></span> &nbsp;&nbsp;&nbsp;
+            <span id="profit" style="color: green"></span>
+            &nbsp;&nbsp;&nbsp;<span id="bookValue"></span>
+          </div>
+          <p id="summaryText"></p>
+        </div>
+      </div>
+
+      <div id="stock-list"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="module" src="stocklist.js"></script>
+    <script type="module" src="learning.js"></script>
+  </body>
+</html>
